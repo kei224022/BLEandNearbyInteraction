@@ -11,6 +11,7 @@
 		5E5A275A2AE7950000A5C2D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A27592AE7950000A5C2D8 /* ContentView.swift */; };
 		5E5A275C2AE7950200A5C2D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A275B2AE7950200A5C2D8 /* Assets.xcassets */; };
 		5E5A275F2AE7950200A5C2D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E5A275E2AE7950200A5C2D8 /* Preview Assets.xcassets */; };
+		5E5A27662AE7951B00A5C2D8 /* InteractionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A27652AE7951B00A5C2D8 /* InteractionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		5E5A27592AE7950000A5C2D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5E5A275B2AE7950200A5C2D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E5A275E2AE7950200A5C2D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5E5A27652AE7951B00A5C2D8 /* InteractionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				5E5A27572AE7950000A5C2D8 /* BLEUWBApp.swift */,
 				5E5A27592AE7950000A5C2D8 /* ContentView.swift */,
+				5E5A27652AE7951B00A5C2D8 /* InteractionManager.swift */,
 				5E5A275B2AE7950200A5C2D8 /* Assets.xcassets */,
 				5E5A275D2AE7950200A5C2D8 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E5A27662AE7951B00A5C2D8 /* InteractionManager.swift in Sources */,
 				5E5A275A2AE7950000A5C2D8 /* ContentView.swift in Sources */,
 				5E5A27582AE7950000A5C2D8 /* BLEUWBApp.swift in Sources */,
 			);
@@ -275,6 +279,9 @@
 				DEVELOPMENT_TEAM = HAL4VQ7TLV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "使用します";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "許可しろ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +311,9 @@
 				DEVELOPMENT_TEAM = HAL4VQ7TLV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "$(PRODUCT_NAME)";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "使用します";
+				INFOPLIST_KEY_NSNearbyInteractionUsageDescription = "許可しろ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

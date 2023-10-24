@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var interactionManager = InteractionManager()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Nearby Interaction")
+                .font(.largeTitle)
+            // ... (other UI elements and interactions)
         }
-        .padding()
+        .onAppear {
+            // ... (setup code, if needed)
+        }
     }
 }
 
