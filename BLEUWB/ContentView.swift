@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var interactionManager = InteractionManager()
+    @EnvironmentObject private var interactionManager : InteractionManager
     
     var body: some View {
         VStack {
             Text("Nearby Interaction")
                 .font(.largeTitle)
+            Text(interactionManager.DeviceU)
             // ... (other UI elements and interactions)
         }
         .onAppear {
@@ -24,4 +25,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(InteractionManager())
 }

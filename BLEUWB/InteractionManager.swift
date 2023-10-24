@@ -20,6 +20,8 @@ class InteractionManager: NSObject, ObservableObject, CBCentralManagerDelegate, 
     var discoveredPeripheral: CBPeripheral?
     var writableCharacteristic: CBCharacteristic?
     
+    @Published var DeviceU: String = ""
+    
     override init() {
         super.init()
         centralManager = CBCentralManager(delegate: self, queue: nil)
@@ -79,6 +81,7 @@ class InteractionManager: NSObject, ObservableObject, CBCentralManagerDelegate, 
        func session(_ session: NISession, didUpdate nearbyObjects: [NINearbyObject]) {
            for object in nearbyObjects {
                print("Nearby object found: \(object)")
+               self.DeviceU = String(1)
            }
        }
 }
